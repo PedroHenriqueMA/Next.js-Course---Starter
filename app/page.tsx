@@ -1,8 +1,10 @@
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+/* Link é a forma de fazer routes entre as páginas sem dar full refresh*/
 import { lusitana } from '@/app/ui/fonts';
 import Image from 'next/image'
+/* Images é bom :) */
 
 export default function Page() {
   return (
@@ -34,6 +36,7 @@ export default function Page() {
           src="/hero-desktop.png"
           width={1000}
           height={700}
+          /* Tailwind é mobile first ent a definição "hidden" seira num contexto geral. "md" é o @media query, então está setando o display block quando entra no media query(tela com width acima de 768px) */
           className='hidden md:block'
           alt='Screenshots of the dashboard project showing desktop version'
           />
